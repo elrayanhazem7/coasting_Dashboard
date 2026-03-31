@@ -1,0 +1,181 @@
+@media (max-width: 767px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    grid-template-areas:
+      "a1"
+      "a2"
+      "a3"
+      "a4"
+      "a5"
+      "a6"
+      "a7"
+      "a8"
+      "a9"
+      "a10"
+      "a11"
+      "a12";
+  }
+  .one {
+    grid-area: a1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .add {
+    order: 1;
+  }
+
+  .one-left {
+    order: 2;
+  }
+  .one_right:last-child {
+    order: 3;
+  }
+  .one .one_right .list1 {
+    width: 90%;
+    padding: 5px;
+    margin: auto;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .one .one_right .add .list {
+    display: none;
+  }
+  .one .one-left .image {
+    display: none;
+  }
+  .one-left-logo {
+    width: fit-content;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+  .twelve {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .parent {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 25px;
+    grid-template-areas:
+      "a12 a1 a1 a1 a1 a1 a1"
+      "a12 a1 a1 a1 a1 a1 a1"
+      "a12 a2 a2 a3 a3 a4 a4"
+      "a12 a2 a2 a3 a3 a4 a4"
+      "a12 a2 a2 a3 a3 a4 a4"
+      "a12 a5 a5 a5 a9 a9 a9"
+      "a12 a5 a5 a5 a9 a9 a9"
+      "a12 a5 a5 a5 a9 a9 a9"
+      "a12 a5 a5 a5 a9 a9 a9"
+      "a12 a5 a5 a5 a9 a9 a9"
+      "a12 a6 a6 a6 a6 a6 a6"
+      "a12 a6 a6 a6 a6 a6 a6"
+      "a12 a6 a6 a6 a6 a6 a6"
+      "a12 a6 a6 a6 a6 a6 a6"
+      "a12 a6 a6 a6 a6 a6 a6"
+      "a12 a6 a6 a6 a6 a6 a6"
+      "a12 a6 a6 a6 a6 a6 a6"
+      "a12 a6 a6 a6 a6 a6 a6"
+      "a12 a6 a6 a6 a6 a6 a6"
+      "a12 a6 a6 a6 a6 a6 a6"
+      "a12 a6 a6 a6 a6 a6 a6"
+      "a12 a7 a7 a7 a11 a11 a11"
+      "a12 a7 a7 a7 a11 a11 a11"
+      "a12 a7 a7 a7 a11 a11 a11"
+      "a12 a7 a7 a7 a11 a11 a11"
+      "a12 a7 a7 a7 a11 a11 a11"
+      "a12 a8 a8 a8 a10 a10 a10";
+  }
+
+  .one {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .one_right {
+    width: auto;
+  }
+  .one_right:last-child {
+    display: none;
+  }
+  .six {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th,
+  td {
+    min-width: auto;
+  }
+  .twelve {
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  .twelve h4,
+  .twelve h5,
+  .twelve h2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .parent {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    grid-template-areas:
+      "a12 a1 a1 a1 "
+      "a12 a1 a1 a1 "
+      "a12 a2 a3 a4 "
+      "a12 a2 a3 a4 "
+      "a12 a2 a3 a4 "
+      "a12 a5 a6 a6"
+      "a12 a5 a6 a6"
+      "a12 a5 a6 a6"
+      "a12 a5 a6 a6"
+      "a12 a5 a6 a6"
+      "a12 a7 a6 a6"
+      "a12 a7 a6 a6"
+      "a12 a7 a6 a6"
+      "a12 a7 a6 a6"
+      "a12 a7 a6 a6"
+      "a12 a7 a6 a6"
+      "a12 a8 a9 a10"
+      "a12 a8 a9 a10"
+      "a12 a8 a9 a10"
+      "a12 a8 a9 a10"
+      "a12 a8 a9 a10"
+      "a12 a8 a11 a10"
+      "a12 a8 a11 a10"
+      "a12 a8 a11 a10"
+      "a12 a8 a11 a10"
+      "a12 a8 a11 a10";
+  }
+
+  .one-left .icons {
+    direction: ltr;
+    display: flex;
+    flex-direction: row;
+  }
+  .twelve {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  .twelve h4,
+  .twelve h5,
+  .twelve h2 {
+    display: block;
+  }
+}
